@@ -148,6 +148,7 @@ Crop all the prepared images by running the following command:
 python images/cropper.py
 ```
 
+
 ### Training SAM
 The main training script can be found in `scripts/train.py`.   
 Intermediate training results are saved to `opts.exp_dir`. This includes checkpoints, train outputs, and test outputs.  
