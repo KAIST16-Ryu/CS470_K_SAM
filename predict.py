@@ -81,9 +81,9 @@ class Predictor(BasePredictor):
 
 def run_alignment(image_path):
     predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
-    aligned_image = align_face(filepath=image_path, predictor=predictor)
-    print("Aligned image has shape: {}".format(aligned_image.size))
-    return aligned_image
+    aligned_img = align_face(filepath=image_path, predictor=predictor)
+    print("Aligned image has shape: {}".format(aligned_img.size))
+    return aligned_img
 
 
 def run_on_batch(inputs, net):
