@@ -59,6 +59,7 @@ class Predictor(BasePredictor):
             age_transformers = [AgeTransformer(target_age=target_age)]
 
         results = np.array(aligned_image.resize((1024, 1024)))
+        
         all_imgs = []
         for age_transformer in age_transformers:
             print(f"Running on target age: {age_transformer.target_age}")
